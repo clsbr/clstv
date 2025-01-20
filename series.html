@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clstv</title>
+    <link rel="Website icon" type="png" href="TV.png">
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet">
+    <style>
+        .voltar{
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            border: 8px solid greenyellow;
+            border-radius: 20px;
+            background-color: greenyellow;
+        }
+    .voltar2 {
+        text-align: center;
+    }
+.TOPO {
+color: rgb(255, 255, 255);
+text-align: center;
+border: 3px solid red;
+border-radius: 40px;
+background-color: red;
+}
+.roud {
+    color: rgb(255, 255, 255);
+}
+.DIVISAO {
+color: rgb(255, 255, 255);
+text-align: center;
+border: 3px solid red;
+border-radius: 40px;
+background-color: red;
+}
+
+    </style>
+</head>
+<body style="background-color: black;">
+
+    <div class="TOPO">
+        <h2 >TV AO VIVO</h2>
+    </div>
+  <!--PLAYER 1-->
+    <div class="videos" style="display: flex; justify-content: space-around;" >
+
+    <h2 class="roud">Band TV Ao Vivo<video id="video" class="video-js vjs-default-skin" controls preload="auto" width="300" height="200">
+        <source src="https://cdn.live.br1.jmvstream.com/w/LVW-15748/LVW15748_Yed7yzLuRC/playlist.m3u8" type="application/x-mpegURL">
+    </video></h2>
+    <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+    <script>
+        var player = videojs('video');
+    </script>
+  <!--PLAYER 2-->
+<h2 class="roud">TV Globo Ao Vivo
+    <video id="video2" class="video-js vjs-default-skin" controls preload="auto" width="300" height="200">
+      <source src="https://anonstream.zip/globosp-globosaopaulo/m3u8" type="application/x-mpegURL">
+    </video>
+  </h2>
+  <!--PLAYER 3-->
+  <script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+  <script>
+    var player2 = videojs('video2');
+  </script></div>
+  <h2 class="DIVISAO"></h2>
+
+  
+  <div style="display: flex; justify-content: space-around;" class="videos2">
+<h2   style="text-align: center; width: 50%;" class="roud" >Animal Planet TV Ao Vivo
+  <iframe src="//%72%65%64%65%63%61%6E%61%69%73%74%76%2E%70%73/player3/ch.php?canal=animalplanet" frameborder=0 height=100% scrolling=no width=100% allow="encrypted-media" allowFullScreen> </iframe></h2>
+  <h2  style="text-align: center; width: 50%;" class="roud" >Animal Planet TV Ao Vivo
+  <iframe  src="//%72%65%64%65%63%61%6E%61%69%73%74%76%2E%70%73/player3/ch.php?canal=animalplanet" frameborder=0 height=100% scrolling=no width=100% allow="encrypted-media" allowFullScreen> </iframe></h2>
+</div>
+<h2 class="DIVISAO"></h2>
+
+
+<br><br>
+<div class="voltar2">
+  <a href="pagina_inicial.html" class="voltar"> <b>PAGINA PRINCIPAL</b> </a>
+</div>
+</body>
+</html>
