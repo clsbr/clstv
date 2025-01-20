@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clstv</title>
+    <link rel="Website icon" type="png" href="TV.png">
+    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet">
+    <style>
+.topo {
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+.CLSTV{
+    border-color: beige;
+    text-decoration: underline;
+}
+.menu {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.MENU {
+border: 2px solid rgb(255, 255, 255);
+padding: 9px;
+border-radius: 40px;
+background-color: rgb(255, 255, 255);
+height: 40px;
+display: flex;
+place-items: center;
+text-align: center;
+}
+.video {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border-radius: 80px;
+    border: 3px solid rgb(0, 183, 255);
+    
+}
+    .saiba_mais{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        border: 3px solid red;
+        border-radius: 50px;
+    }
+    .mrbeast{
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+    }
+    </style>
+</head>
+<body style="background-color: black;">
+    <!--TOPO-->
+    <div class="topo">
+        <br>
+        <img src="TV.png"  width="50" >     <h2 class="CLSTV"><abbr title="Site de LIvre Acesso!">CLSTV</abbr></h2>
+         <p>Site totalmente gratuito e sem anúncios!<p>
+    </div>
+<br>
+<div class="MENU">
+<a href="pagina_inicial.html" style="width: 20%;" class="menu"><p><b>Pesqusar</b></p></a>
+
+<a href="pagina_inicial.html" style="width: 20%;" class="menu"><p><b>ADD Conteúdo</b></p></a>
+
+<a href="pagina_inicial.html" style="width: 20%;" class="menu"><p><b>Filmes e Séries</b></p></a>
+
+<a href="series.html" style="width: 20%;" class="menu"><p><b>TV Ao Vivo</b></p></a>
+</div>
+<br>
+
+<div class="video">
+    <h3>FILMES EM ALTA</h3>
+</div><br>
+<!--CANAL E VIDEO DO MRBEAST-->
+<div style="display: flex; justify-content: space-around;">
+
+   <a href="https://www.youtube.com/@MrBeast" target="_blank" ><p class="mrbeast"><b>Canal: MRBEAST</b>
+   <iframe width="300" height="300" src="https://www.youtube.com/embed/SM66GDRyIVY?si=-P3JgWqx7HitsPXN" frameborder="0" allowfullscreen></iframe></p></a>
+
+<p class="mrbeast"><b>Canal: DESENHOS ANTIGOS</b>
+<video id="video" class="video-js vjs-default-skin" controls preload="auto" width="300px" height="200px">
+    <source src="https://stmv1.srvif.com/retrotv/retrotv/playlist-480p.m3u8" type="application/x-mpegURL">
+</video></p></a>
+<script src="https://vjs.zencdn.net/7.10.2/video.min.js"></script>
+<script>
+    var player = videojs('video');
+</script>
+<br><br>
+
+</div>
+
+<div class="saiba_mais">
+<h4>SOBRE NÓS</h4>
+<p>&nbsp;CLSTV está presente desde 2020, de onde  surgiu a ideia de ter um Website de fácil acesso para todos sem nelhum tipo de anúncio. Só aqui você encontra os melhores filmes e séries lancamentos que acabaram de sair das salas dos Cinemas!</p>
+</div>
+
+</body>
+</html>
